@@ -1,5 +1,7 @@
 # Backbars
 
+[![Gem Version](https://badge.fury.io/rb/backbars.svg)](http://badge.fury.io/rb/backbars)
+
 Backbars is a gem to generate a boilerplate setup for using Backbone with Rails. The gem will include __Backbone.js__ (with dependencies) and __Handlebars.js__ for templating. [handlebars_assets](https://github.com/leshill/handlebars_assets) is included for compiling Handlebars templates and to make use of the Asset Pipeline to help keep your templates nice and organized. It also builds a simple directory structure to help organize your Backbone files and templates.
 
 ```
