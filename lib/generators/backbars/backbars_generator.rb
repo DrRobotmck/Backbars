@@ -1,5 +1,5 @@
 class BackbarsGenerator < Rails::Generators::Base
-  source_root File.expand_path('../templates', __FILE__)
+  source_root File.expand_path('../vendor', __FILE__)
 
   def generate_folders
     # Creates folders to store Backbone related files
@@ -21,8 +21,8 @@ class BackbarsGenerator < Rails::Generators::Base
 
   def include_dependencies
     # Adds underscore, backbone and handlebars library to vendor folder
-    copy_file 'vender/assets/underscore.js', 'vendor/assets/javascripts/underscore.js'
-    copy_file 'vendor/assets/backbone.js', 'vendor/assets/javascripts/backbone.js'
+    copy_file 'assets/underscore.js', 'vendor/assets/javascripts/underscore.js'
+    copy_file 'assets/backbone.js', 'vendor/assets/javascripts/backbone.js'
 
     # Inserts require statements into application.js file
     insert_into_file 'app/assets/javascripts/application.js',"//= require underscore\n//= require backbone\n//= require handlebars\n//= require_tree ./backbone/routers\n//= require_tree ./backbone/models\n//= require_tree ./backbone/collections\n//= require_tree ./backbone/views\n//= require_tree ./templates\n" , after: "//= require turbolinks\n"
