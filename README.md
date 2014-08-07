@@ -19,7 +19,7 @@ app
 ```
 
 The following is inserted into your application.js file:
-```ruby
+```
 //= require underscore
 //= require backbone
 //= require handlebars
