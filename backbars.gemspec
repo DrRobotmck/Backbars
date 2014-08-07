@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["mckenneth.scott@icloud.com"]
   spec.summary       = %q{Configure Backbone and Handlebars with all dependencies}
   spec.description   = %q{Boilerplate Backbone and Handlebars installation}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/DrRobotmck/Backbars"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
