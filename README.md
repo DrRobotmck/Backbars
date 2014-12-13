@@ -32,7 +32,7 @@ The following is inserted into your application.js file:
 ```
 
 #### JavaScript Library Versions
-  - Underscore.js (v1.6.0)
+  - Underscore.js (v1.7.0)
   - Backbone.js (v1.1.2)
   - Handlebars.js (v1.3.0)
 
@@ -50,17 +50,6 @@ Then execute:
 And then execute:
 
     $ rails generate backbars
-
-_If you have an issue with the generator stalling you should run the following command, then re-run the generator_
-
-    $ spring stop
-
-Or install it yourself as:
-
-    $ gem install backbars
-
-## Usage
-
 
 ## Contributing
 

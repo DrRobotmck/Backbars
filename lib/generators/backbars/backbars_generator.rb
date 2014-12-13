@@ -1,5 +1,4 @@
 class BackbarsGenerator < Rails::Generators::Base
-  source_root File.expand_path('../vendor', __FILE__)
 
   def generate_folders
     # Creates folders to store Backbone related files
@@ -22,11 +21,24 @@ class BackbarsGenerator < Rails::Generators::Base
   def include_dependencies
 
     # Inserts require statements into application.js file
-    insert_into_file 'app/assets/javascripts/application.js',"//= require underscore\n//= require backbone\n//= require handlebars\n//= require_tree ./backbone/routers\n//= require_tree ./backbone/models\n//= require_tree ./backbone/collections\n//= require_tree ./backbone/views\n//= require_tree ./templates\n" , after: "//= require turbolinks\n"
+    insert_into_file(
+      'app/assets/javascripts/application.js',
+      [
+        "//= require underscore\n",
+        "//= require backbone\n",
+        "//= require handlebars\n",
+        "//= require_tree ./backbone/routers\n",
+        "//= require_tree ./backbone/models\n",
+        "//= require_tree ./backbone/collections\n",
+        "//= require_tree ./backbone/views\n",
+        "//= require_tree ./templates\n"
+      ].join(''),
+      after: "//= require turbolinks\n")
 
-    insert_into_file 'app/assets/javascripts/application.js', "App = {\nModels: {}, \nCollections: {}, \nViews: {}, \nRouters: {}\n}", after: '//= require_tree .'
+    insert_into_file(
+      'app/assets/javascripts/application.js',
+      "var App = {\nModels: {}, \nCollections: {}, \nViews: {}, \nRouters: {}\n}",
+      after: '//= require_tree .')
   end
-
-
 
 end
