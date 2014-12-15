@@ -39,6 +39,7 @@ class BackbarsGenerator < Rails::Generators::Base
       'app/assets/javascripts/application.js',
       "var App = {\nModels: {}, \nCollections: {}, \nViews: {}, \nRouters: {}\n};",
       after: "//= require_tree .\n")
+
   end
 
 end
