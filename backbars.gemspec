@@ -19,9 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "handlebars_assets"
-  spec.add_runtime_dependency "rails-assets-underscore", source: 'https://rails-assets.org'
-  spec.add_runtime_dependency "rails-assets-backbone", source: 'https://rails-assets.org'
+  spec.add_runtime_dependency "rails-assets-underscore"
+  spec.add_runtime_dependency "rails-assets-backbone"
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
 end

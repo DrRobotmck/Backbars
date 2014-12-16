@@ -39,13 +39,14 @@ The following is inserted into your application.js file:
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add the following lines to your application's Gemfile:
+    source 'https://rails-assets.org'
 
     gem 'backbars'
 
 Then execute:
 
-    $ bundle
+    $ bundle install
 
 And then execute:
 
