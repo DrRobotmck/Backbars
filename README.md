@@ -40,6 +40,7 @@ The following is inserted into your application.js file:
 ## Installation
 
 Add the following lines to your application's Gemfile:
+
     source 'https://rails-assets.org'
 
     gem 'backbars'
