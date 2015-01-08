@@ -23,6 +23,7 @@ The following is inserted into your application.js file:
 //= require underscore
 //= require backbone
 //= require handlebars
+//= require_self
 //= require_tree ./backbone/routers
 //= require_tree ./backbone/models
 //= require_tree ./backbone/collections
@@ -36,12 +37,12 @@ The following is inserted into your application.js file:
   - Backbone.js (v1.1.2)
   - Handlebars.js (v1.3.0)
 
+###### Note
+Underscore and Backbone library dependencies are handled by [Rails Assets](https://rails-assets.org/).
 
 ## Installation
 
 Add the following lines to your application's Gemfile:
-
-    source 'https://rails-assets.org'
 
     gem 'backbars'
 
