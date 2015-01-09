@@ -32,8 +32,7 @@ class BackbarsGenerator < Rails::Generators::Base
         "//= require_tree ./backbone/models",
         "//= require_tree ./backbone/collections",
         "//= require_tree ./backbone/views",
-        "//= require_tree ./templates",
-        "//= require_tree .\n"
+        "//= require_tree ./templates"
       ].join("\n"),
       after: "//= require turbolinks\n")
 
